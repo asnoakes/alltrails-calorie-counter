@@ -33,12 +33,9 @@ class App extends Component {
           .then((data) => {
             console.log(data);
             this.setState({ trail: { trail_id:data.trail_id, name:data.name, elevation:data.trailGeoStats.elevation_gain, distance:data.trailGeoStats.distance_total }});
-            console.log(this.state.trail);
           });
     }else{
       this.setState({[name]:value});
-      console.log(this.state.weight);
-      console.log(this.state.pace);
     }
     if(trailId!=="" && this.state.weight>0 && this.state.pace>0){
           calorieCalc(this.state.weight,this.state.pace,this.state.trail.distance,this.state.trail.elevation);
