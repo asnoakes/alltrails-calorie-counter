@@ -76,11 +76,7 @@ class App extends Component {
         {this.state.pace}
         </label><br/>
         </form>
-
-        <text id="trailInfo">
-          Please select trail name to view trail information.
-        </text>
-
+        <br/>
         <text id="result">
           Please Select Trail Name, your Weight, and your estimated Pace.
         </text>
